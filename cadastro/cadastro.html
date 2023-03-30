@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <a href="/index.html">
+                    <img button class="imagem" src="/assets/voltar.png" alt="" width="100%" height="100%">
+                    <h3>Voltar</h3>
+                </a>
+            </div>
+
+            <div>
+                <h4>h-bank</h4>
+            </div>
+        </header>
+
+        <section>
+            <h2>Cadastro</h2>
+
+            <hr class="linha">
+
+            <div class="double_input">
+                <input class="double" placeholder="Nome" type="text">
+                <input class="double" placeholder="Sobrenome" type="text">
+            </div>
+
+            <div class="one_imput">
+                <input class="one" placeholder="CPF" type="text" maxlength="11">
+                <input class="one" placeholder="Data de Nascimento" type="date" min="1960-12-31" max="2005-03-30">
+            </div>
+
+            <div class="final_input">
+                <input class="double" placeholder="Crie uma senha" type="password">
+                <input class="double" placeholder="Redigite a senha" type="password">
+            </div>
+            
+            <a href="/index.html" style="text-decoration: none;">
+                <input type="submit" value="Registre-se" id="botaoLogin">
+            </a>
+            
+            <p>Já possui uma conta? <a href="/login/login.html">Login</a></p>
+
+        </section>
+
+    </main>    
+</body>
+</html>
