@@ -1,0 +1,918 @@
+@font-face{
+    font-family: Montserrat;
+    src: url(/fontes/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: Atomed;
+    src: url(/fontes/Atomed/Atomed.otf);
+}
+
+:root{
+    --tamanho_borda: 100%;
+}
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    font-family: Montserrat;
+}
+
+#botaoTema{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #04D99D;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    z-index: 3;
+    top: 60px;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#botaoTema:hover{
+    width: 80px;
+    height: 80px;
+    transform: translatex(5px);
+}
+
+header{
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #E5E5E5;
+    display: flex;
+}
+
+header #boxlogo{
+    align-items: center;
+    color: #06D39A;
+    font-size: 15px;
+    margin-left: 20px;
+    font-family: Atomed;
+}
+
+header  #boxlinks_header{
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#boxlinks_header a{
+    text-decoration: none; 
+    color: #000;
+    transition: 0.05s;
+}
+
+#boxlinks_header a:hover{
+    border-bottom: solid;
+}
+
+#linkAtual{
+    border-bottom: solid;
+}
+
+#boxcadastro{
+    width: auto;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+div #boxlogin{
+    margin-right: 20px;
+}
+
+#boxlogin a{
+    text-decoration: none;
+    color: #06d39a;
+    background-color: #fff;
+    padding: 6px 50px 6px 50px;
+    border-radius: 3px;
+    transition: 0.7s;
+}
+
+div #boxregistro{
+    margin-right: 20px;
+}
+
+#boxregistro a{
+    text-decoration: none;
+    color: #000;
+    background-color: #06d39a;
+    padding: 6px 30px 6px 30px;
+    border-radius: 3px;
+    transition: 0.7s
+}
+
+#boxlogin a:hover{
+    color: #000;
+    background-color: #06d39a;
+}
+
+#boxregistro a:hover{
+   color: #06d39a;
+   background-color: #fff;
+}
+
+#resumo{
+    display: flex;
+    width: 100%;    
+    flex-direction: row;
+}
+
+#resumo div{
+    height: 760px;
+}
+
+#texto_resumo{
+    display: flex;
+    width: 40%;
+    font-size: 5vw;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6%;
+    box-sizing: border-box;
+}
+
+.textoDestaque{
+    color: #04d99d;
+}
+
+#modelo {
+    width: 60%;
+    margin: auto;
+    align-self: flex-start;
+    align-items: end;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#modelo img {
+    width: 45vw;
+    z-index: 2;
+}
+
+#vantagens{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-color: #0DC591;
+}
+
+#vantagens h2{
+    font-size: 3vw;
+    font-family: Atomed;
+}
+
+#vantagens p{
+    font-size: 2vw;
+    color: #E5E5E5;
+}
+
+#conteudoVantagens{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 10% 0 10%;
+    box-sizing: border-box;
+}
+
+#vantagens img {
+    width: 30vw;
+}
+
+
+#separator{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#separator div{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+}
+
+#redondoBaixo{
+    bottom: 0px;
+    border-radius: var(--tamanho_borda) var(--tamanho_borda) 0 0;
+}
+
+#redondoBaixo h1 {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 3vw;
+    font-weight: light;
+}
+
+#redondoCima{
+    top: 0px;
+    border-radius: 0 0 var(--tamanho_borda) var(--tamanho_borda);
+}
+
+#investimentos{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+#invest{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vw;
+    align-items: center;
+    color: #04d99d;
+}
+
+.icones {
+    width: 10vw;
+}
+
+#article1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5vw;
+    margin-top: 15vh;
+}
+
+#texto_invest{
+    font-size: 2vw;
+    width: 100%;
+    margin-top: 125px;
+    text-align: center;
+    
+}
+
+#texto_invest button{
+    margin-top: 30vh;
+    width: 55%;
+    background-color: #0D946E;
+    border: 1px solid #04D99D;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 2vw;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#texto_invest button:hover {
+    opacity: 75%;
+    transition: 1s;
+    color: #000;
+}
+
+#article1 img {
+    width: 40vw;
+}
+
+#imagem_idosos1 {
+    display: none;
+}
+
+#article2 {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    gap: 10vw;
+}
+
+#img_maior {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#img_maior img {
+    width: 40vw;
+}
+
+#imagem_responsivo, #invest_responsivo {
+    display: none;
+}
+
+#article2 h3 {
+    text-align: right;
+    font-size: 2.5vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.invista_meio div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    gap: 1vw;
+}
+
+.invista_meio img {
+    width: 5vw;
+    border-radius: 100%;
+}
+
+.invista_meio h4 {
+    font-size: 1.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#h1_inferior {
+    width: 70%;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 2.2vw;
+}
+
+#inferior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10vh;
+    width: 100%;
+    height: auto;
+    /*background-color: rgb(255, 255, 255);*/
+}
+
+.box_inferior  {
+    width: 20%;
+    height: 15vw;
+    margin: auto;
+    text-align: center;
+    border: 0.5px solid #000;
+    padding: 45px 0;
+}
+
+#box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+    background-color: #03FFC299;
+}
+
+#box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #20F1BF8C;
+}
+
+#box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #21DCE899;
+}
+
+#box4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0DB0BA80;
+}
+
+.box_inferior img {
+    width: 12vw;
+}
+
+.box_inferior p {
+    font-size: 2vw;
+
+}
+
+#abra_conta {
+    display: flex;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#abra_conta a {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 8vh;
+    background-color: #0D946E;
+    border: 1px solid #04D99D;
+    border-radius: 20px;
+    color: #fff;
+    margin: auto;
+    font-size: 2.7vw;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#abra_conta a:hover {
+    opacity: 75%;
+    transition: 1s;
+    color: #000;
+}
+
+footer{
+    font-family: Montserrat;
+    width: 100%;
+    height: auto;
+}
+
+#footerSuperior, #footerInferior{
+    width: 100%;
+}
+
+#footerSuperior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+}
+
+#footerEsquerda{
+    font-family: Atomed;
+    color: #04D99D;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 25px;
+    width: 25%;
+}
+
+#footerCentro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+#insideCentro{
+    display: flex;
+    width: 100%;
+    height: 80%;
+}
+
+#nav1, #nav2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    gap: 40px;
+    width: 60%;
+    height: 100%;
+}
+
+#nav1 a, #nav2 a{
+    text-decoration: none;
+    color: #04d99d;
+}
+
+#nav1{
+    border-right: 1px solid #bababa;
+}
+
+#nav2 h6{
+    font-weight: normal;
+}   
+
+#footerDireita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+}
+
+#footerInferior{
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #202020dd;
+    color: #04d99d;
+    font-weight: normal;
+}
+
+@media only screen and (max-width:1066px) {
+
+    #resumo div{
+        height: 550px;
+    }
+
+    #redondoBaixo h1 {
+        font-size: 6vw;
+    }
+
+    #conteudoVantagens h2 {
+        font-size: 40px;
+    }
+
+    #conteudoVantagens p {
+        font-size: 2.7vw;
+    }
+    
+    .icones {
+        width: 11vw;
+    }
+
+    #invest h3 {
+        font-size: 3vw;
+    }
+
+    #article1 {
+        margin-top: 100px;
+        gap: 3vw;
+    }
+
+    #texto_invest {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #texto_invest button {
+        margin-top: 10vh;
+        width: auto;
+        padding: 5px 45px;
+        font-size: 25px;
+    }
+
+    #article2 {
+        width: 90%;
+        gap: 3vw;
+    }
+
+    #img_maior img {
+        width: 50vw;
+    }
+
+    #article2 h3 {
+        font-size: 4vw;
+    }
+
+    .invista_meio img {
+        width: 7vw;
+    }
+
+    .invista_meio h4 {
+        font-size: 25px;
+    }
+    
+    #h1_inferior {
+        font-size: 2.8vw;
+    }
+
+    .box_inferior p {
+        font-size: 2.5vw;
+    }
+
+    #footerEsquerda {
+        font-size: 20px;
+    }
+
+    #nav1, #nav2 {
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+
+    #resumo div{
+        height: 400px;
+    }
+
+    #conteudoVantagens {
+        gap: 10%;
+    }
+
+    #conteudoVantagens img {
+        width: 36vw;
+    }
+    #conteudoVantagens h2 {
+        font-size: 28px;
+    }
+
+    #conteudoVantagens p {
+        font-size: 3.1vw;
+    }
+
+    #invest {
+        display: none;
+    }
+
+    #redondoBaixo {
+        margin-bottom: 50px;
+    }
+
+    #invest_responsivo {
+        display: flex;
+        justify-content: space-around;
+        font-size: 2.5vw;
+        margin-top: 5vh;
+        color: #04d99d;
+    }
+
+    #invest_responsivo div {
+        position: relative;
+        width: auto;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #invest_responsivo .icones {
+        width: 10vw;
+        margin: auto;
+        height: auto;
+    }
+
+    #investimentos {
+        width: 90%;
+    }
+
+    #article1 {
+        margin-top: 5vh;
+        gap: 2vw;
+    }
+
+    #texto_invest {
+        font-size: 3.5vw;
+    }
+
+    #texto_invest button {
+        font-size: 20px;
+    }
+
+    #article2 {
+        gap: 2vw;
+    }
+    
+    #article2 h3 {
+        font-size: 4.5vw;
+    }
+
+    .invista_meio h4 {
+        font-size: 20px;
+    }
+
+    .box_inferior p {
+        font-size: 2.8vw;
+    }
+
+    #abra_conta a {
+        font-size: 4vw;
+    }
+
+    #footerEsquerda {
+        width: 20%;
+        font-size: 15px;
+    }
+
+    #footerCentro {
+        width: 65%;
+    }
+
+    #footerDireita {
+        width: 15%;
+    }
+
+    #nav1, #nav2 {
+        font-size: 3.7vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #texto_resumo {
+        font-size: 6vw;
+    }
+
+    #modelo {
+        justify-content: center;
+    }
+
+    #modelo img {
+        width: 50vw;
+    }
+
+    #resumo div{
+        height: 280px;
+    }
+
+    #conteudoVantagens {
+        gap: 5%;
+    }
+
+    #conteudoVantagens h2 {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    #conteudoVantagens p {
+        font-size: 3.7vw;
+    }
+
+    #redondoCima.meioRedondo, #redondoBaixo.meioRedondo {
+        height: 150px;
+    }
+
+    #vantagens {
+        height: 800px;
+    }
+
+    #invest_responsivo {
+        font-size: 3vw;
+    }
+
+    .icones {
+        width: 15vw;
+    }
+
+    #texto_invest {
+        font-size: 18px;
+    }
+
+    #imagem_idosos1 {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #imagem_idosos2 {
+        display: none;
+    }
+
+    #texto_invest button {
+        margin-top: 35px;
+    }
+
+    #img_maior {
+        display: none;
+    }
+
+    #article1 {
+        margin-top: 2vh;
+        gap: 1vw;
+    }
+
+    #article2 {
+        margin-top: 5px;
+        width: 70%;
+        gap: 1vw;
+    }
+
+    #article2 h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #imagem_responsivo {
+        display: flex;
+        justify-content: center;
+    }
+
+    #imagem_responsivo img {
+        width: 65vw;
+    }
+
+    .invista_meio div {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #h1_inferior {
+        font-size: 14px;
+    }
+    .box_inferior p {
+        font-size: 15px;
+    }
+
+    #inferior {
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    .box_inferior {
+        width: 40%;
+        padding: 40px 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    #box1, #box3 {
+        float: left;
+    }
+
+    #box2, #box4 {
+        float: right;
+    }
+
+    #box3, #box4 {
+        margin-bottom: 5vh;
+    }
+
+    #abra_conta {
+        clear: both;
+        margin-bottom: 5vh;
+    }
+
+    #abra_conta a {
+        width: 200px;
+        font-size: 20px;
+    }
+
+
+    footer {
+        height: 420px;
+    }
+
+    #footerSuperior {
+        display: flex;
+        flex-direction: column;
+        height: 390px;
+    }
+
+    #footerInferior {
+        height: 30px;
+    }
+
+    #footerEsquerda {
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #footerCentro {
+        width: 100%;
+        height: 310px;
+    }
+
+    #insideCentro {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #nav1, #nav2 {
+        width: 100%;
+        height: 80px;
+        gap: 15px;
+        font-size: 20px;
+
+    }
+
+    #nav1 {
+        border: 0;
+    }
+
+    #footerDireita {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #footerDireita a {
+        padding: 0 10px;
+    }
+}
